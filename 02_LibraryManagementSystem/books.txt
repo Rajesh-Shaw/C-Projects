@@ -1,0 +1,5 @@
+101,C Programming Made Easy,Dennis Ritchie,499.50
+102,Data Structures in C,Mark Allen Weiss,650.00
+103,Let Us C,Yashavant Kanetkar,350.00
+104,The Algorithm Design Manual,Steven Skiena,899.00
+105,Operating System Concepts,Abraham Silberschatz,799.99
