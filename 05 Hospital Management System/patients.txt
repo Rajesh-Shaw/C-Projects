@@ -1,0 +1,3 @@
+101,Kishor Kumar,20,Male,Fiver
+102,Sujata,21,Female,Skin allergy
+103,Suraj,25,Male,Liver
