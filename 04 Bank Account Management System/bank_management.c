@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
 #define MAX 500
 
@@ -146,6 +147,7 @@ void depositMoney()
     if(count == 0)
     {
         printf("No Account record.");
+        return;
     }
     
     int accNo, found = 0;
@@ -263,7 +265,15 @@ void recordTransaction(int accNo, const char *type, float amount, float balance)
         return;
     }
 
-    fprintf(fp,"%d,%s,%.2f,%.2f\n", accNo, type, amount, balance);
+    time_t t;
+    struct tm *tm_info;
+    char date[30];
+
+    time(&t);
+    tm_info = localtime(&t);
+    strftime(date, sizeof(date), "%d-%m-%Y %H:%M", tm_info);
+
+    fprintf(fp,"%d,%s,%.2f,%.2f,%s\n", accNo, type, amount, balance, date);
     fclose(fp);
 }
 
@@ -277,14 +287,14 @@ void viewTransactions()
     }
 
     int accNo;
-    char type[20];
+    char type[20], date[30];
     float amount, balance;
 
     printf("\n--- Transaction History ---\n");
-    while(fscanf(fp, "%d,%19[^,],%f,%f\n", &accNo, type, &amount, &balance) == 4)
+    while(fscanf(fp, "%d,%19[^,],%f,%f,%[^\n]\n", &accNo, type, &amount, &balance, date) == 5)
     {
-        printf("Account No: %d | Type: %s | Amount: Rs%.2f | Balance After: Rs%.2f\n",
-               accNo, type, amount, balance);
+        printf("Account No: %d | Type: %s | Amount: Rs%.2f | Balance After: Rs%.2f | %s\n",
+               accNo, type, amount, balance, date);
     }
 
     fclose(fp);
