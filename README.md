@@ -15,6 +15,8 @@ Each project focuses on practical applications of **structures, file handling, p
 | 04  | [Bank Account Management System](./04%20Bank%20Account%20Management%20System) | Simulate a mini banking system supporting deposit, withdrawal, and account search. |
 | 05  | [Hospital Management System](./05%20Hospital%20Management%20System) | Manage patients, doctors, appointments, and billing records. |
 | 06  | [Inventory Management System](./06%20Inventory%20Management%20System) | Manage product stocks, update inventory, and record sales with timestamps. |
+| 07 | [Hotel Management System](./07%20Hotel%20Management%20System) | Manage hotel rooms, bookings, and customers efficiently. |
+
 
 ---
 
