@@ -1,0 +1,60 @@
+What is the capital of India?
+Delhi
+Mumbai
+Kolkata
+Chennai
+1
+Which programming language is known as the 'mother of all languages'?
+C
+Python
+Java
+Ruby
+1
+Which data structure uses LIFO?
+Queue
+Array
+Stack
+Linked List
+3
+Which planet is known as the Red Planet?
+Earth
+Mars
+Venus
+Jupiter
+2
+What is 5 + 7?
+10
+12
+14
+15
+2
+Who invented the light bulb?
+Albert Einstein
+Isaac Newton
+Thomas Edison
+Nikola Tesla
+3
+Which is the largest ocean in the world?
+Atlantic Ocean
+Indian Ocean
+Pacific Ocean
+Arctic Ocean
+3
+Which key is used to end a string in C?
+\0
+\1
+EOF
+NULL
+1
+What does CPU stand for?
+Central Process Unit
+Central Processing Unit
+Computer Processing Unit
+Control Processing Unit
+2
+Who wrote 'Harry Potter'?
+Chetan Bhagat
+J.K. Rowling
+Mark Twain
+Charles Dickens
+2
